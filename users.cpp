@@ -29,18 +29,34 @@ Users::Users()
 
       addUser(email, name, accessLvl);
     }
-    userData.close();
   }
+  userData.close();
 }
 
 
 
 Users::~Users()
 {
+  string email, name;
+  int accessLvl;
+
+  userData.open("/home/student/Documents/lab09-atakux/users.dat", ofstream::out);
+  userData.close();
+  userData.open("/home/student/Documents/lab09-atakux/users.dat", ofstream::app);
+
+  if(userData)
+  {
+    for(int i = 0; i < elementNum; i++)
+    {
+      userData << elements[i].email << endl;
+      userData << elements[i].name << endl;
+      userData << elements[i].accessLvl << endl;
+    }
+  }
+  userData.close();
 
   delete [] elements;
 }
-
 
 int Users::getElementNum(string email)
 {
