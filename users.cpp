@@ -1,10 +1,8 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include <algorithm>
 #include <cstdlib>
 #include <fstream>
-#include <cstring>
 #include "users.hpp"
 
 using namespace std;
@@ -38,7 +36,7 @@ Users::Users()
 Users::~Users()
 {
   string email, name;
-  int accessLvl;
+  int access;
 
   userData.open("/home/student/Documents/lab09-atakux/users.dat", ofstream::out);
   userData.close();
@@ -46,11 +44,14 @@ Users::~Users()
 
   if(userData)
   {
-    for(int i = 0; i < elementNum; i++)
+    for(int i = 1; i < elementNum; i++)
     {
-      userData << elements[i].email << endl;
-      userData << elements[i].name << endl;
-      userData << elements[i].accessLvl << endl;
+      email = elements[i].email;
+      name = elements[i].name;
+      access = elements[i].accessLvl;
+      userData << email << endl;
+      userData << name << endl;
+      userData << access << endl;
     }
   }
   userData.close();

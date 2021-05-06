@@ -4,8 +4,8 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
-#include <algorithm>
 #include <cstdlib>
+#include <fstream>
 #include "users.hpp"
 
 using namespace std;
@@ -94,14 +94,6 @@ int main()
             u.deleteUser(email);
           }
         }
-        break;
-
-      case 5:
-        exit(1);
-        break;
-
-      default:
-        cout << "Invalid choice.";
         break;
     }
   } while(choice != 5);

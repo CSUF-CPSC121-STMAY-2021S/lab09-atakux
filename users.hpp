@@ -24,7 +24,6 @@ private:
 
 public:
   Users();
-  ~Users();
 
   int getNumElements()
   {
@@ -52,6 +51,8 @@ public:
   void addUser(string, string, int);
   void modifyUser(string, string, int);
   void deleteUser(string);
+
+  ~Users();
 
 };
 
