@@ -9,7 +9,7 @@
 
 using namespace std;
 
-struct User
+struct Bitch
 {
   string email, name;
   int accessLvl;
@@ -20,7 +20,7 @@ class Users
 private:
   fstream userData;
   int elementNum;
-  User * elements;
+  Bitch * elements;
 
 public:
   Users();

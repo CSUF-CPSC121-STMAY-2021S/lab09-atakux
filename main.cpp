@@ -12,9 +12,9 @@ using namespace std;
 
 int main()
 {
-  Users u;
   int choice, lvl;
   string email, name, type;
+  Users u;
 
   u.addUser("billgates@microsoft.com", "Bill Gates", 2);
   u.addUser("markzuckerberg@facebook.com", "Mark Zuckerberg", 2);
@@ -95,6 +95,7 @@ int main()
           }
         }
         break;
+
     }
   } while(choice != 5);
 

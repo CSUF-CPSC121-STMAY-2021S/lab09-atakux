@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites tests="4" failures="0" disabled="0" errors="0" time="0.006" timestamp="2021-05-05T21:10:59" name="AllTests">
-  <testsuite name="Users" tests="4" failures="0" disabled="0" errors="0" time="0.006" timestamp="2021-05-05T21:10:59">
-    <testcase name="getElementNumForInvalidEmail" status="run" result="completed" time="0.004" timestamp="2021-05-05T21:10:59" classname="Users" />
-    <testcase name="addUser" status="run" result="completed" time="0" timestamp="2021-05-05T21:10:59" classname="Users" />
-    <testcase name="modifyUser" status="run" result="completed" time="0.001" timestamp="2021-05-05T21:10:59" classname="Users" />
-    <testcase name="deleteUser" status="run" result="completed" time="0" timestamp="2021-05-05T21:10:59" classname="Users" />
+<testsuites tests="4" failures="0" disabled="0" errors="0" time="0.003" timestamp="2021-05-05T21:24:21" name="AllTests">
+  <testsuite name="Users" tests="4" failures="0" disabled="0" errors="0" time="0.003" timestamp="2021-05-05T21:24:21">
+    <testcase name="getElementNumForInvalidEmail" status="run" result="completed" time="0.001" timestamp="2021-05-05T21:24:21" classname="Users" />
+    <testcase name="addUser" status="run" result="completed" time="0.001" timestamp="2021-05-05T21:24:21" classname="Users" />
+    <testcase name="modifyUser" status="run" result="completed" time="0" timestamp="2021-05-05T21:24:21" classname="Users" />
+    <testcase name="deleteUser" status="run" result="completed" time="0.001" timestamp="2021-05-05T21:24:21" classname="Users" />
   </testsuite>
 </testsuites>
