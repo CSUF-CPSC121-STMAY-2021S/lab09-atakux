@@ -74,8 +74,8 @@ int Users::getElementNum(string email)
 
 void Users::addUser(string email, string name, int access)
 {
-  Bitch * temp = nullptr;
-  temp = new Bitch[elementNum + 1];
+  Memeber * temp = nullptr;
+  temp = new Memeber[elementNum + 1];
 
   for(int i = 0; i < elementNum; i++)
   {
@@ -110,8 +110,8 @@ void Users::modifyUser(string email, string name, int access)
 
 void Users::deleteUser(string email)
 {
-  Bitch * temp = nullptr;
-  temp = new Bitch[elementNum - 1];
+  Memeber * temp = nullptr;
+  temp = new Memeber[elementNum - 1];
   int count = 0;
 
   for(int i = 0; i < elementNum; i++)
